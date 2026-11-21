@@ -7119,4 +7119,149 @@ h6 {
     }
 }
 
+
+
+/* SDG Carousel */
+.causes_active {
+    position: relative;
+}
+
+/* Carousel content */
+.causes_active .owl-stage-outer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation wrapper */
+.causes_active .owl-nav {
+    display: block !important;
+    position: absolute !important;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+}
+
+/* Navigation buttons */
+.causes_active .owl-nav button.owl-prev,
+.causes_active .owl-nav button.owl-next {
+    position: absolute !important;
+    top: 0;
+    width: 45px;
+    height: 50px;
+    background: #ce3293 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 5px;
+    font-size: 24px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 10000 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.causes_active .owl-nav button.owl-prev {
+    left: 10px;
+}
+
+.causes_active .owl-nav button.owl-next {
+    right: 10px;
+}
+
+.causes_active .owl-nav button:hover {
+    background: #a92376 !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .causes_active .owl-nav button.owl-prev {
+        left: 5px;
+    }
+
+    .causes_active .owl-nav button.owl-next {
+        right: 5px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# SDG Heading and Icon Alignment
+--------------------------------------------------------------*/
+
+.single_cause .causes_content .sdg_heading {
+    display: grid !important;
+    grid-template-columns: 55px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 14px;
+    width: 100%;
+    margin: 0 0 18px;
+    direction: ltr;
+    text-align: left;
+}
+
+/* SDG Thumbnail */
+.single_cause .causes_content .sdg_heading img {
+    display: block !important;
+    width: 55px !important;
+    height: 55px !important;
+    max-width: 55px !important;
+    object-fit: contain;
+    margin: 0 !important;
+    padding: 0;
+    float: none !important;
+    position: static !important;
+}
+
+/* SDG Heading Text */
+.single_cause .causes_content .sdg_heading h4 {
+    display: block !important;
+    width: auto !important;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: left !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* SDG Description */
+.single_cause .causes_content .sdg_heading + p {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #888;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+
+    .single_cause .causes_content .sdg_heading {
+        grid-template-columns: 45px minmax(0, 1fr);
+        column-gap: 12px;
+    }
+
+    .single_cause .causes_content .sdg_heading img {
+        width: 45px !important;
+        height: 45px !important;
+        max-width: 45px !important;
+    }
+
+    .single_cause .causes_content .sdg_heading h4 {
+        font-size: 17px;
+    }
+
+}
+
+
 /*# sourceMappingURL=style.css.map */
